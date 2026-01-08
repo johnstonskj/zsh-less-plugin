@@ -32,6 +32,7 @@ LESS[_FUNCTIONS]=""
 
 # Saving the current state for any modified global environment variables.
 LESS[_OLD_HISTFILE]="${LESSHISTFILE:-}"
+LESS[_OLD_PAGER]="${PAGER:-}"
 
 ############################################################################
 # Internal Support Functions
@@ -83,6 +84,8 @@ less_plugin_init() {
         mkdir -p "${LESSHISTFILE}"
     fi
 
+    export PAGER=less
+
     .less_define_alias more 'less'
 }
 .less_remember_fn less_plugin_init
@@ -113,6 +116,7 @@ less_plugin_unload() {
 
     # Reset global environment variables .
     export LESSHISTFILE="${LESS[_OLD_HISTFILE]}"
+    export PAGER="${LESS[_OLD_PAGER]}"
 
     # Remove the global data variable.
     unset LESS
