@@ -1,19 +1,18 @@
 # -*- mode: sh; eval: (sh-set-shell "zsh") -*-
 #
 # Plugin Name: less
+# Description: Zsh plugin to set up environment for the command less.
 # Repository: https://github.com/johnstonskj/zsh-less-plugin
-#
-# Description:
-#
-#   Zsh plugin to set up environment for the command less.
 #
 # Public variables:
 #
 # * `LESS`; plugin-defined global associative array with the following keys:
 #   * `_ALIASES`; a list of all aliases defined by the plugin.
 #   * `_FUNCTIONS`; a list of all functions defined by the plugin.
-#   * `_PLUGIN_DIR`; the directory the plugin is sourced from.
+#   * `_PLUGIN_DIR`; the directory the plugin is sourced from.`HISTFILE` environment variable.
+#   * `_OLD_PAGER`; the previous value of the `PAGER` environment variable.
 # * `LESSHISTFILE`; the location of the command-specific history file.
+# * `PAGER`; the pager command to use.
 #
 
 ############################################################################
