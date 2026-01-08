@@ -5,7 +5,7 @@
 #
 # Description:
 #
-#   Add one-line description here...
+#   Zsh plugin to set up environment for the command less.
 #
 # Public variables:
 #
