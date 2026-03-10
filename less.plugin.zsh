@@ -1,8 +1,15 @@
 # -*- mode: sh; eval: (sh-set-shell "zsh") -*-
 #
-# @name less
-# @brief Zsh plugin to set up environment for the command less.
-# @repository https://github.com/johnstonskj/zsh-less-plugin
+# @name: less
+# @brief: Set the environment for the command `less`.
+# @repository: https://github.com/johnstonskj/zsh-less-plugin
+# @version: 0.1.1
+# @license: MIT AND Apache-2.0
+#
+# Public variables:
+#
+# * `LESSHISTFILE`; the location of the command-specific history file.
+# * `PAGER`; the pager command to use.
 #
 
 ############################################################################
