@@ -1,8 +1,10 @@
 # -*- mode: sh; eval: (sh-set-shell "zsh") -*-
 #
-# Plugin Name: less
-# Description: Zsh plugin to set up environment for the command less.
-# Repository: https://github.com/johnstonskj/zsh-less-plugin
+# @name: less
+# @brief: Set the environment for the command `less`.
+# @repository: https://github.com/johnstonskj/zsh-less-plugin
+# @version: 0.1.1
+# @license: MIT AND Apache-2.0
 #
 # Public variables:
 #
