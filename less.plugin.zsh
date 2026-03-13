@@ -21,13 +21,13 @@ less_plugin_init() {
     builtin emulate -L zsh
 
     @zplugins_envvar_save less LESSHISTFILE
-    export LESSHISTFILE="${XDG_STATE_HOME}/less/history"
+    typeset -g LESSHISTFILE="${XDG_STATE_HOME}/less/history"
     if [[ ! -d "${LESSHISTFILE}" ]]; then
         mkdir -p "${LESSHISTFILE}"
     fi
 
     @zplugins_envvar_save less PAGER
-    export PAGER=less
+    typeset -g PAGER=less
 
     @zplugins_define_alias less more 'less'
 }
